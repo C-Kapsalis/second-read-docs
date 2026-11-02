@@ -19,11 +19,10 @@ import textwrap
 #######################
 
 # Project name
-# TODO: Update with the official name of your project (e.g., "LXD documentation")
-project = "Project documentation"
+project = "Second Read documentation"
 
 # Author name; used in the default copyright statement in the page footer
-author = "Canonical Ltd."
+author = "Christoforos Kapsalis"
 
 # The year in the copyright statement
 copyright = f"{datetime.date.today().year}"
@@ -35,16 +34,13 @@ html_title = project
 ogp_site_url = os.environ.get("READTHEDOCS_CANONICAL_URL", "/")
 
 # Preview name of the documentation website
-# TODO: To use a different name for the project in previews, update the next line.
 ogp_site_name = project
 
 # Preview image URL
-# TODO: To customise the preview image, update the next line.
-ogp_image = "https://assets.ubuntu.com/v1/cc828679-docs_illustration.svg"
+ogp_image = "https://secondread.studio/favicon.ico"
 
 # Product favicon; shown in bookmarks, browser tabs, etc.
-# TODO: To customise the favicon, uncomment and update the next line.
-# html_favicon = "_static/favicon.png"
+html_favicon = "https://secondread.studio/favicon.ico"
 
 # The theme for the HTML output
 html_theme = "ulwazi"
@@ -52,29 +48,22 @@ html_theme = "ulwazi"
 # Dictionary of values to pass into every page's template.
 html_context = {
     # Community links for the 'Resources' dropdown menu.
-    # TODO: Add community links; empty values hide individual links.
-    "discourse": "",
-    "mattermost": "",
-    "matrix": "",
-    "github_url": "",
+    "github_url": "https://github.com/C-Kapsalis/second-read-docs.git",
     # Feedback and edit/view links require a valid `github_url`.
-    # TODO: Set to False to hide feedback and page controls.
     "feedback": True,
     # Brand configuration for the leftmost entry in the banner
-    # TODO: If your project falls under a different product page, update the title, URL,
-    #       and logo if necessary.
-    "logo_title": "Canonical",
-    "logo_link_URL": "https://canonical.com",
-    "logo_img_URL": "https://assets.ubuntu.com/v1/82818827-CoF_white.svg",
+    "logo_title": "Second Read",
+    "logo_link_URL": "https://github.com/C-Kapsalis/second-read",
+    "logo_img_URL": "https://secondread.studio/favicon.ico",
     # License information to be rendered in the footer
     "author": author,
     "license": {
         # TODO: Specify your project's license.
         # For the name, we recommend using the standard shorthand identifier from
         # https://spdx.org/licenses
-        "name": "",
+        "name": "MIT License",
         # TODO: Link directly to your project's license statement.
-        "url": "",
+        "url": "https://github.com/C-Kapsalis/second-read/blob/main/LICENSE",
     },
 }
 
