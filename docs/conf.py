@@ -43,7 +43,7 @@ ogp_image = "https://secondread.studio/favicon.ico"
 html_favicon = "https://secondread.studio/favicon.ico"
 
 # The theme for the HTML output
-html_theme = "ulwazi"
+html_theme = "furo"
 
 # Dictionary of values to pass into every page's template.
 html_context = {
@@ -61,7 +61,7 @@ html_context = {
         # TODO: Specify your project's license.
         # For the name, we recommend using the standard shorthand identifier from
         # https://spdx.org/licenses
-        "name": "MIT License",
+        "name": "Creative Commons Attribution 4.0 International",
         # TODO: Link directly to your project's license statement.
         "url": "https://github.com/C-Kapsalis/second-read/blob/main/LICENSE",
     },
@@ -72,7 +72,7 @@ html_context = {
 #######################
 
 # Use RTD canonical URL to ensure duplicate pages have a specific canonical URL
-html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "/")
+html_baseurl = "https://second-read-docs.readthedocs.io/" 
 
 # sphinx-sitemap uses html_baseurl to generate the full URL for each page:
 sitemap_url_scheme = "{link}"
@@ -121,8 +121,10 @@ rediraffe_dir_only = True
 # <first sentence of home page>".
 llms_txt_description = textwrap.dedent(
     """\
-    This is the documentation for the Sphinx Stack, a template repository that helps you
-    set up, build, and publish Sphinx documentation.
+    This is the documentation for Second Read, agent skill for editing a 
+    draft before you publish it. Second Read reads drafts the way that reader 
+    will, in order, and hands back the edits it would make, each tied 
+    to the exact words it changes.
     """
 )
 
@@ -133,8 +135,7 @@ llms_txt_full_build = True
 llms_txt_suppress_unknown_node_warnings = True
 
 # The base URL for references built by sphinx-markdown-builder.
-if os.environ.get("READTHEDOCS"):
-    markdown_http_base = html_baseurl
+markdown_http_base = html_baseurl
 
 ###########################
 # Link checker exceptions #
@@ -167,7 +168,6 @@ linkcheck_retries = 3
 # Custom Sphinx extensions; see
 # https://www.sphinx-doc.org/en/master/usage/extensions/index.html
 extensions = [
-    "ulwazi",
     "myst_parser",
     "sphinx_design",
     "sphinx_rerediraffe",
