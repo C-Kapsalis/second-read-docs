@@ -23,3 +23,6 @@ sphinx-modern-pdf-style~=0.1
 # Vale dependencies
 rst2html
 vale==3.13.0.0
+
+# Theme
+furo
