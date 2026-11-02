@@ -67,6 +67,16 @@ html_context = {
     },
 }
 
+# Adding this to enable the Feedback button in the Furo theme
+html_theme_options = {
+    # Point to your GitHub repository
+    "source_repository": "https://github.com/C-Kapsalis/second-read-docs",
+    # Specify your default branch
+    "source_branch": "main",
+    # Point to the subfolder where your docs live (if applicable)
+    "source_directory": "docs/",
+}
+
 #######################
 # Sitemap configuration: https://sphinx-sitemap.readthedocs.io/
 #######################
